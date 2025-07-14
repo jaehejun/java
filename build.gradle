@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+application {
+    applicationDefaultJvmArgs = ["-Dfile.encoding=UTF-8"]
+}
+
+group 'com.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.32'
+    annotationProcessor 'org.projectlombok:lombok:1.18.32'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21  // 사용하는 JDK 버전에 맞춰 변경
+    targetCompatibility = JavaVersion.VERSION_21
+}
