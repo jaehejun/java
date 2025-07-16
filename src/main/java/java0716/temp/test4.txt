@@ -1,0 +1,6 @@
+aaaaaa
+bbbbb
+ccc
+dd
+e
+exit   
