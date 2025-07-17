@@ -21,10 +21,6 @@ class ClientHandler extends Thread {
         this.socket = socket;
     }
 
-    public String getClientId() {
-        return clientId;
-    }
-
     public void send(String msg) {
         out.println(msg);
     }
